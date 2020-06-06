@@ -21,4 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-<img src="public/favicon.ico" />
