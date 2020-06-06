@@ -1,4 +1,6 @@
-# video-browser
+# VueTube
+
+<img src="src/assets/vuetube-demo.gif" width="600"/>
 
 ## Project setup
 ```
@@ -19,3 +21,4 @@ npm run build
 ```
 npm run lint
 ```
+<img src="public/favicon.ico" />

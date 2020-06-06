@@ -1,5 +1,5 @@
 <template>
-    <div v-if="video" class="col-md-8">
+    <div v-if="video" class="vide-detail col-md-8">
         <div class="embed-responsive embed-responsive-16by9">
             <iframe :src="videoUrl" class="embed-responsive-item"/>
         </div>
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+    .vide-detail {
+        padding-left: 0;
+    }
     .details {
         margin-top: 10px;
         padding: 10px;

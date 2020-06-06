@@ -14,8 +14,15 @@ export default {
             return this.video.snippet.thumbnails.default.url;
         },
         title() {
-            var parser = new DOMParser;
-            return parser.parseFromString(this.video.snippet.title, 'text/html');
+            let parser = new DOMParser;
+            let parsed = parser.parseFromString(this.video.snippet.title, "text/html");
+            var desc = parsed.body.innerText;
+            
+            if (desc.length > 55) {
+                desc = desc.slice(0,52) + "...";
+            }
+
+            return desc;
         }
     },
     methods: {
@@ -32,6 +39,8 @@ export default {
         cursor: pointer;
         padding: 0;
         /* flex-flow: column wrap; */
+        margin-bottom: 10px;
+        border-radius: 2px;
     }
     li:hover {
         background-color: #eee; 
@@ -39,6 +48,7 @@ export default {
     li p {
         margin: 0;
         font-size: 0.9em;
+        padding: 4px 6px;
     }
 </style>
 

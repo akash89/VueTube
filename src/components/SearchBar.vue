@@ -19,6 +19,7 @@ export default {
     div {
         align-self: center;
         width: 100%;
+        margin-bottom: 10px;
     }
     input {
         width: 75%;

@@ -30,6 +30,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+div.list-group  {
+    padding-right: 0;
+}
 </style>

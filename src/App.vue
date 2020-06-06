@@ -71,15 +71,20 @@ export default {
 .title-wrapper {
     width: 100%;
     padding: 10px;
-    background: #ccc;
+    /* background: #ccc; */
     margin-bottom: 20px;
-    background: linear-gradient(to right, #4fc08d, #bf5050);
+    background: radial-gradient(ellipse at center, #fff 0%,#f7f7f7 100%);
+    /* background: linear-gradient(to right, #4fc08d, #bf5050); */
+    border-bottom: 1px solid #ccc;
 }
 .title {
     text-align: center;
     font-weight: 900;
     margin: 0;
-    color: #000;
+    color: #4fc08d;
+}
+.title span {
+    color: #bf5050;
 }
 .app-container {
     display: flex;
